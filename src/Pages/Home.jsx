@@ -22,7 +22,7 @@ useEffect(() => {
       <h1 className="">Character List</h1>
       <div className="">
         {characters.map((character, index) => (
-          <div className="" key={character.id}>
+          <div className="" key={character.index}>
             <div className="">
                 <Link to={`/character/${index}`} key={index}>
                 <img src={character.image}/>

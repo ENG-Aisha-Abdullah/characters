@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function CharacterDetails() {
   const { index } = useParams(); 
-  const [characters, setCharacters] = useState({});
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     axios.get('https://655127797d203ab6626e943b.mockapi.io/Character_fahad')
