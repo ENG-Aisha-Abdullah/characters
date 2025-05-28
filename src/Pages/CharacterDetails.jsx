@@ -29,7 +29,7 @@ function CharacterDetails() {
         <h1 className="font-bold text-xl mb-2">My Name is <span className='text-amber-900'>{characters.name}.</span></h1>
 <h3 className="text-lg mb-1">Hair color: {characters.hair}</h3>
 <p className="text-md">
-  I am  <span className='text-amber-900 hover: '>{characters.status}, {characters.gender}, {characters.species}</span> who lives on the <span className='text-amber-900'>{characters.origin}.</span>
+  I am  <span className='text-amber-900'>{characters.status}, {characters.gender}, {characters.species}</span> who lives on the <span className='text-amber-900'>{characters.origin}.</span>
 </p>
 
 

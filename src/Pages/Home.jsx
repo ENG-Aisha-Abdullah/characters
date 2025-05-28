@@ -19,7 +19,7 @@ useEffect(() => {
 
   return (
   <div className='bg-blue-100 pt-10 flex flex-col items-center'>
-    <h1 className="text-center text-2xl font-bold pb-5">Character List</h1>
+    <h1 className="text-center text-3xl font-bold pb-5 text-amber-900">Character List</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] gap-5 items-center justify-center">
       {characters.map((character, index) => (
         <div key={index} className="flex flex-col items-center shadow-md rounded bg-white">
