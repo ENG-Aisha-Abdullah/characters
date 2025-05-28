@@ -18,21 +18,23 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="  ">
-      <h1 className="">Character List</h1>
-      <div className="">
-        {characters.map((character, index) => (
-          <div className="" key={character.index}>
-            <div className="">
-                <Link to={`/character/${index}`} key={index}>
-                <img src={character.image}/>
-                </Link>
-            </div>
-          </div>
-        ))}
-      </div>
+  <div className='bg-blue-100 pt-10 flex flex-col items-center'>
+    <h1 className="text-center text-2xl font-bold pb-5">Character List</h1>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] gap-5 items-center justify-center">
+      {characters.map((character, index) => (
+        <div key={index} className="flex flex-col items-center shadow-md rounded bg-white">
+          <Link to={`/character/${index}`}>
+            <img
+              src={character.image}
+              className="w-90 h-90 object-cover"
+            />
+          </Link>
+        </div>
+      ))}
     </div>
-  )
+  </div>
+);
+
 }
 
 export default Home

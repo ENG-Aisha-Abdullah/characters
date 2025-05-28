@@ -18,17 +18,18 @@ function CharacterDetails() {
   }, [index]);
 
   return (
-    <div className=" bg-gray-200 p-4 h-screen flex items-center justify-center">
-      <div className="flex flex-col bg-white p-4 mb-4 rounded shadow w-[80%] mx-auto items-center">
-        <h1 className="font-bold text-lg ">
-            <div>
-         <img src= {characters.image}/>
+  <div className='bg-blue-100 flex flex-col h-screen items-center justify-center w-full'>
+    
+            <div className='object-cover flex flex-col w-full  items-center'>
+         <img src= {characters.image}
+         className='h-90 w-90 '
+         />
          </div>
-         <div>
+         <div className="font-bold text-lg pt-5">
         <h1 className="font-bold text-xl mb-2">My Name is <span className='text-amber-900'>{characters.name}.</span></h1>
 <h3 className="text-lg mb-1">Hair color: {characters.hair}</h3>
 <p className="text-md">
-  I am  <span className='text-amber-900 hover: '>{characters.status} {characters.gender} {characters.species}</span> who lives on the <span className='text-amber-900'>{characters.origin}.</span>
+  I am  <span className='text-amber-900 hover: '>{characters.status}, {characters.gender}, {characters.species}</span> who lives on the <span className='text-amber-900'>{characters.origin}.</span>
 </p>
 
 
@@ -38,9 +39,9 @@ function CharacterDetails() {
        
           
          
-        </h1>
+     
       </div>
-    </div>
+  
   );
 }
 
